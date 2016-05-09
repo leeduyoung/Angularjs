@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app>
+
+  <head>
+    <title>Hello Angular</title>
+    <meta charset="utf-8" />
+    <script src="../angular.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <!-- ng-click 클릭이벤트 발생시 사용 -->
+      <button ng-click="x=x+1" ng-init="x=0">Click me</button><br>
+      value of x is {{x}}
+      <br>
+      <!--ng-blur 포커스 잃었을 경우 사용. ng-init 초기값 세팅시 사용-->
+      <input ng-init="y=0" ng-blur="y=y+1" />
+      <input />
+      value of y is {{y}}
+    </div>
+  </body>
+
+</html>
